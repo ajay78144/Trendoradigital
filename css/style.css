@@ -229,7 +229,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/hero-section.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/hero2.jpg) center center no-repeat;
     background-size: cover;
     padding: 100px 0px 100px 0px;
 }
@@ -612,6 +612,7 @@
     font-size: 38px;
     font-weight: 700;
     line-height: 1.3;
+    padding-bottom: 90px;
 }
 
 /* Paragraph Style */
@@ -776,9 +777,10 @@
 }
 
 
-/* Carousel Image Height Responsive */
-.carousel-img {
-    height: 100vh;
+/* Carousel Image home page Height Responsive */
+
+.carousel-inner .carousel-img {
+    height: 700px;
     object-fit: cover;
 }
 
@@ -835,19 +837,19 @@
     .carousel-subtitle {
         font-size: 0.9rem;
         letter-spacing: 1px;
-                text-align: left;
+                text-align: center;
 
     }
     .carousel-title {
         font-size: 1.5rem;
         line-height: 1.4;
-        text-align: left;
+        text-align: center;
         padding: 0px 30px 0px 30px;
 
     }
 }
 
-.grow-heading{
+/* .grow-heading{
     padding-bottom: 82px;
 }
 
@@ -865,13 +867,18 @@
 
 .seo-para{
 padding: 0px 120px 0px 120px;
-}
+} */
 
-/* slider css */
+
+/* Home page slider css */
 /* SECTION */
+
+
+
+
 .sticky-scroll-section {
   padding: 90px 0px 0px 100px;
-  background: #f9f9f9;
+  background: #ffffff;
 }
 
 /* LEFT SIDE */
@@ -879,10 +886,6 @@ padding: 0px 120px 0px 120px;
   position: sticky;
   top: 120px;
   max-width: 700px;
-}
-
-.left-gap {
-  margin-left: 70px;
 }
 
 .center-content {
@@ -933,7 +936,6 @@ padding: 0px 120px 0px 120px;
   display: flex;
   flex-direction: column;
   gap: 90px;
-  padding
 }
 
 /* CARD WRAPPER */
@@ -1012,7 +1014,7 @@ padding: 0px 120px 0px 120px;
 }
 
 .info-card.horizontal-card {
-  max-width: 780px;
+  max-width: 800px;
 }
 
 .info-card.horizontal-card {
@@ -1073,6 +1075,7 @@ padding: 0px 120px 0px 120px;
 /* GAP BETWEEN NUMBER & CARD */
 .card-box {
   margin-bottom: 45px;
+  margin-left: 20px;
 }
 
 /* ===========================
@@ -1126,11 +1129,16 @@ padding: 0px 120px 0px 120px;
 
 /* extra control for left content */
 .sticky-content.left-gap {
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 
 /* ======================================
-   WHY CHOOSE US – RESPONSIVE FIX
+  End Home page top down slider
+====================================== */
+
+
+/* ======================================
+  Service Pages WHY CHOOSE US – RESPONSIVE FIX
 ====================================== */
 
 /* -------- DEFAULT DESKTOP REFINEMENT -------- */
@@ -1142,8 +1150,8 @@ padding: 0px 120px 0px 120px;
   display: flex;
   flex-direction: column;
   gap: 60px;
-  padding-left: 30px;
-}
+  /* padding-left: 30px; */
+}    
 
 .card-box {
   position: relative;
@@ -1206,6 +1214,7 @@ padding: 0px 120px 0px 120px;
   .left-gap {
     padding-left: 0;
     margin-left: 0;
+
   }
 
   .cards-wrapper {
@@ -1297,7 +1306,7 @@ padding: 0px 120px 0px 120px;
 /* EXTRA SAFETY FOR SMALL MOBILE */
 
 /* ===============================
-   SEO SUCCESS SECTION
+   Service Page SEO SUCCESS SECTION slider
 ================================ */
 
 section {
@@ -1324,10 +1333,6 @@ section {
 /* ===============================
    CAROUSEL STYLING
 ================================ */
-
-.carousel {
-  margin-top: 40px;
-}
 
 .carousel-inner img {
   height: 650px;
@@ -1375,9 +1380,6 @@ section {
 ================================ */
 @media (max-width: 767px) {
 
-  section {
-    padding: 40px 0;
-  }
 
   .seo-heading {
     font-size: 26px;
@@ -1386,138 +1388,6 @@ section {
   .seo-para {
     font-size: 14px;
     margin-bottom: 25px;
-  }
-
-  .carousel {
-    margin-top: 25px;
-  }
-
-  .carousel-inner img {
-    height: 250px;
-    border-radius: 2px;
-    width: fit-content;
-  }
-}
-
-/* ===============================
-   SMALL MOBILE
-================================ */
-@media (max-width: 480px) {
-
-  .seo-heading {
-    font-size: 22px;
-    
-  }
-
-  .seo-para {
-    font-size: 13px;
-  }
-
-  .carousel-inner img {
-    height: 170px;
-  }
-}
-
-
-
-
-
-
-
-
-/* ===============================
-   SEO SUCCESS SECTION
-================================ */
-
-section {
-  padding: 70px 0;
-}
-
-/* Heading */
-.seo-heading {
-  font-size: 38px;
-  line-height: 1.3;
-  color: #222;
-}
-
-/* Paragraph */
-.seo-para {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #666;
-  padding: 0 15px;
-}
-
-/* ===============================
-   CAROUSEL STYLING
-================================ */
-
-.carousel {
-  margin-top: 40px;
-}
-
-.carousel-inner img {
-  height: 650px;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-/* Carousel dots */
-.carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-/* Arrows */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
-
-/* ===============================
-   TABLET RESPONSIVE
-================================ */
-@media (max-width: 991px) {
-
-  section {
-    padding: 50px 0;
-  }
-
-  .seo-heading {
-    font-size: 30px;
-  }
-
-  .seo-para {
-    font-size: 15px;
-  }
-
-  .carousel-inner img {
-    height: 280x;
-  }
-}
-
-/* ===============================
-   MOBILE RESPONSIVE
-================================ */
-@media (max-width: 767px) {
-
-  section {
-  }
-
-  .seo-heading {
-    font-size: 26px;
-  }
-
-  .seo-para {
-    font-size: 14px;
-    margin-bottom: 25px;
-  }
-
-  .carousel {
-    margin-top: 25px;
   }
 
   .carousel-inner img {
@@ -1980,3 +1850,37 @@ section {
     font-size: 13px;
   }
 }
+
+
+/* responsive top down slider */
+
+ /* spinner responsive */
+
+
+/* Desktop */
+.spinner-img {
+  width: 4%;
+  max-width: 60px;
+  min-width: 40px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .spinner-img {
+    width: 6%;
+    max-width: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .spinner-img {
+    width: 10%;
+    max-width: 40px;
+  }
+}
+
+
+
+
+

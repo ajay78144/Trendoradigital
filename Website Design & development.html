@@ -35,16 +35,19 @@
 <body>
      
 <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-orange" style="width: 6rem; height: 6rem;" role="status"></div>
-        <!-- <i class="fa fa-laptop-code fa-2x text-orange position-absolute top-50 start-50 translate-middle"></i> -->
-        <img src="img/target (1).png" width="4%" alt="" class="position-absolute top-50 start-50 translate-middle">
-        <img src="" alt="">
-    </div>
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border position-relative text-orange" style="width: 6rem; height: 6rem;" role="status"></div>
+
+    <img src="img/target (1).png"
+         alt=""
+         class="spinner-img position-absolute top-50 start-50 translate-middle">
+
+    <img src="" alt="">
+</div>
 <!-- Spinner End -->
 
 <!-- Topbar Start -->
-<div class="container-fluid bg-white px-0 py-2 topbar-custom wow fadeIn" data-wow-delay="0.1s">
+<div class="container-fluid bg-white px-0 topbar-custom wow fadeIn" data-wow-delay="0.1s">
     <div class="row gx-0 align-items-center d-none d-lg-flex">
 
         <!-- LEFT SIDE: Email + Phone -->
@@ -52,12 +55,12 @@
 
             <div class="d-flex align-items-center">
                 <i class="fa fa-envelope text-orange me-2"></i>
-                <small class="text-secondary">info@example.com</small>
+                <small class="text-secondary">contact@trendoradigital.com</small>
             </div>
 
             <div class="d-flex align-items-center">
                 <i class="fa fa-phone-alt text-orange me-2"></i>
-                <small class="text-secondary">+91 98765-43210</small>
+                <small class="text-secondary">+91 88473-37622</small>
             </div>
 
         </div>
@@ -89,7 +92,7 @@
  <div class="collapse navbar-collapse" id="navbarCollapse">
 
     <!-- CENTER LINKS -->
-     <div class="navbar-nav text-center mx-auto">
+    <div class="navbar-nav mx-auto" style="padding:0px 30px 0px 30px;"> 
 
         <a href="index.html" class="nav-item nav-link active">Home</a>
 
@@ -193,9 +196,9 @@
             secure, and optimized for conversions.
         </p>
 
-        <div class="row g-4">
+        <div class="why-seo-cards row g-4">
             <div class="col-md-4">
-                <div class="p-4 shadow rounded bg-white">
+                <div class="why-seo-card p-4 shadow rounded bg-white">
                     <i class="bi bi-laptop text-orange fs-1"></i>
                     <h5 class="mt-3 fw-bold">Responsive Design</h5>
                     <p class="text-muted small">Websites that look great on all devices, from mobiles to desktops.</p>
@@ -203,7 +206,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="p-4 shadow rounded bg-white">
+                <div class="why-seo-card p-4 shadow rounded bg-white">
                     <i class="bi bi-speedometer2 text-orange fs-1"></i>
                     <h5 class="mt-3 fw-bold">High Performance</h5>
                     <p class="text-muted small">Fast-loading websites optimized for better user experience and SEO.</p>
@@ -211,7 +214,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="p-4 shadow rounded bg-white">
+                <div class="why-seo-card p-4 shadow rounded bg-white">
                     <i class="bi bi-shield-lock text-orange fs-1"></i>
                     <h5 class="mt-3 fw-bold">Secure & Reliable</h5>
                     <p class="text-muted small">We ensure your website is safe, backed up, and scalable for growth.</p>
@@ -222,7 +225,7 @@
 </section>
 
 <!-- WEB DESIGN SUCCESS STORIES -->
-<section class="seo-success-section py-5" style="background-color: #f3f3f3;">
+<!-- <section class="seo-success-section py-5" style="background-color: #f3f3f3;">
     <div class="container">
         <h2 class="text-center fw-bold display-6 mb-3 seo-heading">
             Web Design & Development Success Stories
@@ -232,7 +235,7 @@
         </p>
     </div>
 
-    <!-- Carousel -->
+    Carousel
     <div id="carouselExampleIndicators" class="container carousel slide" data-bs-ride="carousel"
         style="padding: 0px 0px 70px 0px;">
         <div class="carousel-indicators">
@@ -263,7 +266,7 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
-</section>
+</section> -->
 
 <!-- Grow Business Section Start -->
 <div class="container-fluid grow-business-section py-5">
@@ -353,12 +356,16 @@
 </section>
 
 <!-- ================= PRICING SECTION ================= -->
-<section class="pricing-section py-5 bg-light">
+<section class="faq-section py-5">
     <div class="container">
-        <h2 class="text-center fw-bold display-6 mb-3">Web Design & Development Pricing Plans</h2>
-        <p class="text-center text-muted mb-5">
-            Choose a plan that fits your web project goals. Our packages include design, development, and ongoing support.
-        </p>
+
+          <h2 class="pricing-heading text-center fw-bold display-6 mb-3">
+   Web Design & Development Pricing Plans
+    </h2>
+
+    <p class="pricing-para text-center text-muted mb-5">
+   Choose a plan that fits your web project goals. Our packages include design, development, and ongoing support.
+    </p>
 
         <div class="row g-4">
             <!-- Basic Plan -->
@@ -541,10 +548,10 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                      <h5 class="text-light mb-4">Address</h5>
+             <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>E 253, Phase 8B Industrial Area, Mohali, Punjab, India</p>
+             <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 88473 37622</p>
+             <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@trendoradigital.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -570,29 +577,6 @@
                     <a class="btn btn-link" href="">SEO Optimization</a>
                 </div>
 
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-1.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-2.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-3.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-4.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-5.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-6.jpg" alt="Image">
-                        </div>
-                    </div>
-                </div> -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
             <p>Subscribe for the latest digital marketing tips, updates, and growth insights.</p>
@@ -610,9 +594,6 @@
                         &copy; <a href="#">Trendora Digital</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!--/*** The author’s attribution link must remain intact in the template. ***/-->
-                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
-                        <!-- Designed By <a href="https://htmlcodex.com">HTML Codex</a> -->
                     </div>
                 </div>
             </div>
@@ -634,7 +615,6 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
