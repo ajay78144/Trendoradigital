@@ -154,7 +154,7 @@
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
-        padding: 8px 0px 0px 30px;
+        padding: 8px 0;
     }
 
     .navbar .navbar-nav {
@@ -189,122 +189,58 @@
 }
 
 /*** Header ***/
-
-
-/* Carousel Image */
-.carousel-inner .carousel-item .carousel-img {
-  width: 100%;
-  height: 85vh;
-  object-fit: cover;
-}
-
-/* Overlay for text readability */
-.carousel-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)
-  );
-  z-index: 1;
-}
-
-/* Caption Container */
 #header-carousel .carousel-caption {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
 }
 
-/* Subtitle */
-.carousel-subtitle {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  animation: fadeUp 1s ease-in-out;
-}
-
-/* Title */
-.carousel-title {
-  color: #fff;
-  font-size: 3.2rem;
-  font-weight: 800;
-  line-height: 1.3;
-  max-width: 900px;
-  animation: fadeUp 1.3s ease-in-out;
-}
-
-/* Controls */
 #header-carousel .carousel-control-prev,
 #header-carousel .carousel-control-next {
-  width: 8%;
+    width: 10%;
 }
 
 #header-carousel .carousel-control-prev-icon,
 #header-carousel .carousel-control-next-icon {
-  width: 3rem;
-  height: 3rem;
-  filter: invert(1);
-}
-
-/* Indicators */
-#header-carousel .carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.3;
-  border: none;
-}
-
-#header-carousel .carousel-indicators .active {
-  opacity: 1;
-  background-color: #fff;
-}
-
-/* Animations */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .carousel-title {
-    font-size: 2.4rem;
-  }
+    width: 3rem;
+    height: 3rem;
 }
 
 @media (max-width: 768px) {
-  .carousel-img {
-    height: 70vh;
-  }
-
-  .carousel-title {
-    font-size: 1.8rem;
-  }
-
-  .carousel-subtitle {
-    font-size: 1rem;
-  }
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 500px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
+#header-carousel .carousel-indicators [data-bs-target] {
+     width: 12px;
+        height: 12px;
+        background-color: #fff;
+        border-radius: 50%;
+        opacity: 0.2;
+        border: none;
+        margin: 5px;
+}
 
+#header-carousel .carousel-indicators [data-bs-target] img {
+   opacity: 1;
+   background-color: rgb(221, 113, 9);
+}
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/hero2.jpg) center center no-repeat;
@@ -720,20 +656,19 @@
 /* seo business cards making  */
 .local-seo-section {
     background: #ffffff;
-    text-align: center;
 }
 
 .local-heading {
     font-size: 36px;
     color: #000;
     font-weight: 700;
+    padding-bottom: 30px;
 }
 
 .local-para {
     font-size: 16px;
     color: #333;
     line-height: 1.7;
-       padding-bottom: 15px;
 }
 
 .local-card {
@@ -767,19 +702,19 @@
 }
 
 .icon-box {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: rgba(255, 136, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-box i {
     color: rgb(221, 113, 9);
-  font-size: 28px;
+    font-size: 32px;
 }
 
 .local-card:hover .icon-box {
@@ -789,85 +724,6 @@
 .local-card:hover .icon-box i {
     color: #000;
 }
-
-/* ===============================
-   MOBILE RESPONSIVE FIX
-================================ */
-
-@media (max-width: 768px) {
-
-  .local-seo-section {
-    padding: 30px 0;
-  }
-
-  /* LEFT ALIGN ON MOBILE */
-  .local-seo-header {
-    text-align: left;
-    margin-bottom: 24px;
-  }
-
-  .local-heading {
-    font-size: 22px;
-    margin-bottom: 8px;
-  }
-
-  .local-para {
-    font-size: 14.5px;
-    line-height: 1.5;
-  }
-
-  /* Cards remain centered */
-  .local-card {
-    padding: 24px 18px;
-  }
-}
-
-/* ===============================
-   SMALL MOBILE
-================================ */
-
-@media (max-width: 480px) {
-
-  .local-heading {
-    font-size: 20px;
-    display: left;
-  }
-
-  .local-para {
-    font-size: 14px;
-    display: left;
-  }
-}
-
-
-/* Mobile & Tablet */
-@media (max-width: 768px) {
-
-  /* Heading */
-  .local-heading,
-  .seo-heading,
-  .grow-heading {
-    text-align: left !important;
-    margin-bottom: 8px;
-  }
-
-  /* Paragraph */
-  .local-para,
-  .seo-para,
-  .grow-paragraph {
-    text-align: left !important;
-    margin-bottom: 12px;
-    line-height: 1.5;
-  }
-
-  /* Reduce extra gaps */
-  .local-seo-section,
-  .grow-business-section {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-  }
-}
-
 
 /* FAQ Page css */
 /* FAQ SECTION DESIGN */
@@ -933,9 +789,102 @@
     inset: 0;
 }
 
+
+/* Carousel Image home page Height Responsive */
+
+.carousel-inner .carousel-img {
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Caption Background for Readability */
+.carousel-caption {
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Subtitle */
+.carousel-subtitle {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Main Title */
+.carousel-title {
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Laptop & Desktop */
+@media (min-width: 992px) {
+    .carousel-subtitle {
+        font-size: 1.2rem;
+    }
+    .carousel-title {
+        font-size: 4rem;
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .carousel-img {
+        height: 80vh;
+    }
+    .carousel-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    #header-carousel .carousel-item {
+        height: 30vh !important;
+    
+}
+    .carousel-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+                text-align: center;
+
+    }
+    .carousel-title {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0px 30px 0px 30px;
+
+    }
+}
+
+/* .grow-heading{
+    padding-bottom: 82px;
+}
+
+.local-heading, .local-para {
+    text-align: center;
+}
+
+.carousel-item img {
+    height: 700px;
+}
+
+.seo-heading{
+    padding-top: 10px;
+}
+
+.seo-para{
+padding: 0px 120px 0px 120px;
+} */
+
+
 /* Home page slider css */
-/* 
-SECTION */
+/* SECTION */
 
 
 
@@ -950,7 +899,7 @@ SECTION */
   position: sticky;
   top: 120px;
   max-width: 700px;
-  padding-top: 150px;
+  padding-top: 80px;
 }
 
 .center-content {
@@ -1388,6 +1337,118 @@ section {
 }
 
 /* ===============================
+   CAROUSEL STYLING
+================================ */
+
+.carousel-inner img {
+  /* height: 650px; */
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Carousel dots */
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ===============================
+   TABLET RESPONSIVE
+================================ */
+@media (max-width: 991px) {
+
+  section {
+    padding: 50px 0;
+  }
+
+  .seo-heading {
+    font-size: 30px;
+  }
+
+  .seo-para {
+    font-size: 15px;
+  }
+
+  .carousel-inner img {
+    /* height: 20px; */
+  }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 767px) {
+
+
+  .seo-heading {
+    font-size: 26px;
+  }
+
+  .seo-para {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .carousel-inner img {
+    /* height: 50px; */
+  }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+@media (max-width: 480px) {
+
+  .seo-heading {
+    font-size: 22px;
+    display: left;
+  }
+
+  .seo-para {
+    font-size: 13px;
+        display: left;
+
+  }
+
+  .carousel-inner img {
+    height: 170px;
+  }
+}
+
+/* Tablet & Mobile - Left Align Text */
+@media (max-width: 991px) {
+
+  .seo-heading,
+  .seo-para {
+    text-align: left !important;
+  }
+
+  .seo-para {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Small Mobile Extra Control */
+@media (max-width: 575px) {
+
+  .seo-heading,
+  .seo-para {
+    text-align: left !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* ===============================
    GROW BUSINESS SECTION – RESET
 ================================ */
 
@@ -1563,10 +1624,157 @@ section {
   }
 }
 
+/* ===============================
+   LOCAL SEO SECTION
+================================ */
 
+.local-seo-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
 
- /* Pricing Responsive */
+/* Header */
+.local-seo-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
 
+.local-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.local-para {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6c757d;
+}
+
+/* ===============================
+   CARDS
+================================ */
+
+.local-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.local-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.local-card h5 {
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.local-card p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Icon */
+.icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 136, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon-box i {
+  font-size: 28px;
+  color: #ff8800;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE FIX
+================================ */
+
+@media (max-width: 768px) {
+
+  .local-seo-section {
+    padding: 30px 0;
+  }
+
+  /* LEFT ALIGN ON MOBILE */
+  .local-seo-header {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .local-heading {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .local-para {
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+
+  /* Cards remain centered */
+  .local-card {
+    padding: 24px 18px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .local-heading {
+    font-size: 20px;
+    display: left;
+  }
+
+  .local-para {
+    font-size: 14px;
+    display: left;
+  }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 768px) {
+
+  /* Heading */
+  .local-heading,
+  .seo-heading,
+  .grow-heading {
+    text-align: left !important;
+    margin-bottom: 8px;
+  }
+
+  /* Paragraph */
+  .local-para,
+  .seo-para,
+  .grow-paragraph {
+    text-align: left !important;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  /* Reduce extra gaps */
+  .local-seo-section,
+  .grow-business-section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -1680,140 +1888,6 @@ color:black;
 
 .nav-link a:hover{
   color:rgb(221, 113, 9)
-}
-
-
-/* =============================
-   SEO SUCCESS SECTION
-============================= */
-
-.seo-success-section {
-  background-color: #f3f3f3;
-  padding: 70px 0;
-}
-
-/* Text Wrapper */
-.seo-text-wrapper {
-  max-width: 900px;
-  margin-bottom: 40px;
-}
-
-/* Heading */
-.seo-heading {
-  font-size: 2.4rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 15px;
-  color: #111;
-}
-
-/* Paragraph */
-.seo-para {
-  font-size: 1.05rem;
-  color: #666;
-  text-align: center;
-  line-height: 1.8;
-}
-
-/* =============================
-   CAROUSEL STYLING
-============================= */
-
-.seo-carousel {
-  max-width: 1300px;
-  margin: auto;
-}
-
-.seo-carousel-img {
-  object-fit: cover;
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-
-
-/* Controls */
-.seo-carousel .carousel-control-prev-icon,
-.seo-carousel .carousel-control-next-icon {
-  width: 3rem;
-  height: 3rem;
-  filter: invert(1);
-}
-
-/* Indicators */
-.seo-carousel .carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000;
-  opacity: 0.3;
-}
-
-.seo-carousel .carousel-indicators .active {
-  opacity: 1;
-  background-color: #fff;
-}
-
-/* =============================
-   RESPONSIVE
-============================= */
-
-@media (max-width: 992px) {
-  .seo-carousel-img {
-    height: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  /* Text moves LEFT on mobile */
-  .seo-heading,
-  .seo-para {
-    text-align: left;
-  }
-
-  .seo-heading {
-    font-size: 1.9rem;
-  }
-
-  .seo-para {
-    font-size: 1rem;
-  }
-
-  .seo-carousel-img {
-    height: 220px;
-    border-radius: 8px;
-  }
-}
-
-.carousel-img {
-  width: 100%;
-  height: 60vh;          /* Desktop height */
-  object-fit: cover;    /* Crop image nicely */
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-  .seo-carousel-img {
-    height: 45vh;
-  }
-  .seo-success-section {
-  background-color: #f3f3f3;
-  padding: 10px 0;
-}
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .seo-carousel-img {
-    height: 35vh;
-  }
-  .seo-success-section {
-  background-color: #f3f3f3;
-  padding: 10px 0;
-}
 }
 
 
